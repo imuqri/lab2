@@ -2,7 +2,7 @@
 #include <unistd.h> /* needed for fork() and getpid() */
 #include <stdio.h> /* needed for printf() */
 #include <sys/wait.h>
-Int main(int argc, char **argv) {
+int main(int argc, char **argv) {
 int pid; /* process ID */
 switch (pid = fork()) {
 case 0: /* a fork returns 0 to the child */
